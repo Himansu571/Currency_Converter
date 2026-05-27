@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currency.css" />
+</head>
+<body>
+    <nav style="background-color: rgb(4, 44, 44); color: aliceblue;" >
+        <div class="nav-brand">
+            <img src="logo.png" alt="Brand Logo" id="logo" />
+            <span>Brand Name</span>
+            <div style="text-align: right; width: 98%;">menu</div>
+        </div>
+    </nav>
+    <div class="wrapper">
+         <header>
+      <h1>Currency Converter</h1>
+        </header>
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input id="amountInput" type="text" value="  " />
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/48x36/in.png" alt="" id="fromFlag" />
+                        <select name="" id="fromCurrency">
+                        </select>
+                    </div>
+                </div>
+                <div class="to">
+                    <p>To</p>
+                    <div class="select-box">
+                        <img src="" alt="" id="toFlag" />
+                        <select name="" id="toCurrency">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="exchange_rate" id="resultDiv">Getting exchange rate...</div>
+            <button type="button">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="currency1.js"></script>
+</body>
+</html>
